@@ -8,6 +8,6 @@ The links used to achieve the interview.
 
 **Google colab**
 
-- 🧰 [Google colab](https://research.google.com/colaboratory/) for the EDA, Feature engineering & Modelization part. If free computation resources are available, just use it right ? 🤣
+- 🧰 [Google colab](https://research.google.com/colaboratory/) for the EDA, Feature engineering & Modelization part. If free computing resources are available, just use them right ? 🤣
 - The following files are from the work done on Google colab - `interview-nba5years/eda.ipynb`, `interview-nba5years/model.ipynb`.
 - The repository `interview-nba5years/resources/models` contains the elements necessary for the deployment.
