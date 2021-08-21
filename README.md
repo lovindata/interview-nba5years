@@ -11,3 +11,7 @@ The links used to achieve the interview.
 - 🧰 [Google colab](https://research.google.com/colaboratory/) for the EDA, Feature engineering & Modelization part. If free computing resources are available, just use them right ? 🤣
 - The following files are from the work done on Google colab - [eda.ipynb](/interview-nba5years/eda.ipynb), [model.ipynb](interview-nba5years/model.ipynb).
 - The repository [models](/interview-nba5years/resources/models) contains the elements necessary for the deployment.
+
+**REST API**
+
+- [Fast API](https://fastapi.tiangolo.com/) framework, high performance, easy to learn, fast to code, ready for production
