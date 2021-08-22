@@ -37,7 +37,7 @@ GP | TOV
 
 - Docstings to do for the Python codes
 - Use `seed` when training the model for the reproductibily
-- Prepare a Dockerfile and test the container deployment
+- Prepare a Dockerfile and test the container deployment on Heroku for example (it's free)
 - ...? If you, reader have anything else in mind I am happy to hear it ! 🤓
 
 
