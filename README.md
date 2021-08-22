@@ -33,6 +33,14 @@ GP | TOV
 - Happy coding! 😊😊😊
 
 
+# Possible improvment
+
+- Docstings to do for the Python codes
+- Use `seed` when training the model for the reproductibily
+- Prepare a Dockerfile and test the container deployment
+- ...? If you, reader have anything else in mind I am happy to hear it ! 🤓
+
+
 # References
 
 The links used to achieve the interview.
