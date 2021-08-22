@@ -2,6 +2,16 @@
 
 🧐💯 A simple technical inverview passed for a Data Scientist position. The subject is "given the sample data [nba_logreg.csv](/interview-nba5years/resources/nba_logreg.csv) provided by an investor specialized in NBA players, are you able to make an AI accessible through REST API capable of predicting if the investment on player is worth or not ?"
 
+# Some images
+
+**EDA**
+
+**Model**
+
+**REST API**
+
+![](docs/restapidemo_nba5years.PNG)
+
 # References
 
 The links used to achieve the interview.
