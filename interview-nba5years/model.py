@@ -1,4 +1,6 @@
 # Import
+import numpy as np
+
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Dense
 from tensorflow.keras import backend as K
@@ -58,7 +60,7 @@ class DnnModel:
         
         model = Model(inputs=input_mod, outputs=output_mod)
         
-        opt_adam = Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07)
+        opt_adam = Adam(learning_rate=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-07)
         model.compile(opt_adam, loss='binary_crossentropy', metrics=[recall_m, precision_m, f1_m, 'accuracy'])
         
         ### Load & Add weights
@@ -80,7 +82,8 @@ class DnnModel:
 
     ## Load weights on the model
     def get_predict(self, feature):
+        feature = np.array(feature).reshape((1,-1))
         feature = self.scale_mod.transform(feature) # Normalize the data
         probability_TARGET_5Yrs = to_percentage(self.cpu_model.predict(feature).flatten()[0])
         tARGET_5Yrs = probability_TARGET_5Yrs > self.decision_threshold
-        return {'TARGET_5Yrs': tARGET_5Yrs, 'TARGET_5Yrs_probability': probability_TARGET_5Yrs, 'decision_threshold': self.decision_threshold, 'correctness': self.mean_precision, 'correctness_variability': 3 * self.threestd_precision}
+        return {'TARGET_5Yrs': tARGET_5Yrs, 'TARGET_5Yrs_probability': probability_TARGET_5Yrs, 'decision_threshold': self.decision_threshold, 'correctness': self.mean_precision, 'correctness_variability': self.threestd_precision}

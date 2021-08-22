@@ -1,15 +1,15 @@
 import traceback
 
-from typing import List
+from typing import List, Optional
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from tensorflow.python.ops.numpy_ops.np_math_ops import true_divide
-from tensorflow.python.platform.tf_logging import error
+import numpy as np
 from model import DnnModel
 
 
 app = FastAPI()
+
 dnnmodel = DnnModel()
 dnnmodel.load_dnn()
 dnnmodel.load_scaler()
@@ -24,26 +24,23 @@ class Input(BaseModel):
 
 
 class Output(BaseModel):
-    request_id: str = None
-    TARGET_5Yrs: float = None
-    TARGET_5Yrs_probability: float = None
-    decision_threshold: float = None
-    correctness: float = None
-    correctness_variability: float = None
+    request_id: Optional[str] = None
+    TARGET_5Yrs: Optional[float] = None
+    TARGET_5Yrs_probability: Optional[float] = None
+    decision_threshold: Optional[float] = None
+    correctness: Optional[float] = None
+    correctness_variability: Optional[float] = None
     errors: List = []
 
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-@app.get("/{request_id}", response_model=Output)
+@app.put("/{request_id}", response_model=Output)
 def get_prediciton(request_id: str, request_model: Input):
     
     response = Output()
     response.request_id = request_id
 
     try:
+        # EXPECTED = ['GP', 'TOV', 'STL', 'OREB']
         input = [request_model.game_played, request_model.turnover, request_model.steal, request_model.offensive_rebounds]
         output = dnnmodel.get_predict(input)
 
