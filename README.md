@@ -1,16 +1,37 @@
 # Technical Interview - NBA Predictor Is your favorite player going to last more than 5 years ?
 
+![](docs/stacks_used.PNG)
+
 🧐💯 A simple technical inverview passed for a Data Scientist position. The subject is "given the sample data [nba_logreg.csv](/interview-nba5years/resources/nba_logreg.csv) provided by an investor specialized in NBA players, are you able to make an AI accessible through REST API capable of predicting if the investment on player is worth or not ?"
+
 
 # Some images
 
-**EDA**
+**Some EDA on the training data**
 
-**Model**
+GP | TOV
+:-:|:-:
+![](docs/gp.PNG) | ![](docs/tov.PNG)
 
-**REST API**
+ STL | OREB
+ :-:|:-:
+ ![](docs/stl.PNG) | ![](docs/oreb.PNG)
 
-![](docs/restapidemo_nba5years.PNG)
+**REST API result**
+
+![](docs/restapi_example.PNG)
+
+
+# Want to run or modify the application yourself ?
+
+- Install Python 3.7.1 or Use an Python virtual environnement with Python 3.7.1 (Advised)
+- Install the requirements with `pip install -r requirements.txt`
+- Clone the project to your `directory`
+- From your `directory`, run `cd interview-nba5years/interview-nba5years`
+- Then run `uvicorn restapi:app --reload`
+- From a web navigator go to `http://127.0.0.1:8000/docs`
+- Happy coding! 😊😊😊
+
 
 # References
 
