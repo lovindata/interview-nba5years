@@ -5,7 +5,12 @@
 🧐💯 A simple technical inverview passed for a Data Scientist position. The subject is "given the sample data [nba_logreg.csv](/interview-nba5years/resources/nba_logreg.csv) provided by an investor specialized in NBA players, are you able to make an AI accessible through REST API capable of predicting if the investment on player is worth or not ?"
 
 
-# Some images
+# Some results
+
+**Want to use the REST API ?**
+
+- 🌍😋 https://nba5years.herokuapp.com/
+- Nba5Years is hosted through a free billing on Heroku at the moment. It might take some seconds to charge the page.
 
 **Some EDA on the training data**
 
@@ -38,7 +43,6 @@ GP | TOV
 
 - Docstings to do for the Python codes
 - Use `seed` when training the model for the reproductibily
-- Prepare a Dockerfile and test the container deployment on Heroku for example (it's free)
 - ...? If you, reader have anything else in mind I am happy to hear it ! 🤓
 
 
@@ -55,3 +59,8 @@ The links used to achieve the interview.
 **REST API**
 
 - [Fast API](https://fastapi.tiangolo.com/) framework, high performance, easy to learn, fast to code, ready for production
+
+**Heroku**
+
+- [Create and Deploy FastAPI app to Heroku](https://www.tutlinks.com/create-and-deploy-fastapi-app-to-heroku/)
+- [How to Deploy a FastAPI App on Heroku for Free](https://towardsdatascience.com/how-to-deploy-your-fastapi-app-on-heroku-for-free-8d4271a4ab9)

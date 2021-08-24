@@ -3,6 +3,7 @@ import traceback
 from typing import List, Optional
 from fastapi import FastAPI
 from pydantic import BaseModel
+from starlette.responses import RedirectResponse
 
 import numpy as np
 from model import DnnModel
@@ -22,7 +23,6 @@ class Input(BaseModel):
     steal: float
     offensive_rebounds: float
 
-
 class Output(BaseModel):
     request_id: Optional[str] = None
     TARGET_5Yrs: Optional[float] = None
@@ -32,6 +32,10 @@ class Output(BaseModel):
     correctness_variability: Optional[float] = None
     errors: List = []
 
+
+@app.get("/", include_in_schema=False)
+def redirect_root():
+    return RedirectResponse(url='/docs')
 
 @app.put("/{request_id}", response_model=Output)
 def get_prediciton(request_id: str, request_model: Input):
