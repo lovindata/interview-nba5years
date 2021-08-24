@@ -25,9 +25,10 @@ GP | TOV
 # Want to run or modify the application yourself ?
 
 - Install Python 3.7.1 or Use an Python virtual environnement with Python 3.7.1 (Advised)
-- Install the requirements with `pip install -r requirements.txt`
 - Clone the project to your `directory`
-- From your `directory`, run `cd interview-nba5years/interview-nba5years`
+- From your `directory`, run `cd interview-nba5years` a first time
+- Install the requirements with `pip install -r requirements.txt`
+- From your `directory`, run `cd interview-nba5years` a second time
 - Then run `uvicorn restapi:app --reload`
 - From a web navigator go to `http://127.0.0.1:8000/docs`
 - Happy coding! 😊😊😊

@@ -1,1 +1,1 @@
-web: uvicorn interview-nba5years.restapi:app --host=0.0.0.0 --port=${PORT:-5000}
+web: sh -c 'cd ./interview-nba5years && uvicorn restapi:app --host=0.0.0.0 --port=${PORT:-5000}'
