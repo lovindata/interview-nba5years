@@ -5,7 +5,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from starlette.responses import RedirectResponse
 
-import numpy as np
 from model import DnnModel
 
 
