@@ -34,6 +34,7 @@ GP | TOV
 - From your `directory`, run `cd interview-nba5years` a first time
 - Install the requirements with `pip install -r requirements.txt`
 - From `directory/interview-nba5years`, run `cd interview-nba5years` a second time
+- If it's not done on your PC -> From a terminal do `set PYTHONPATH=%PYTHONPATH%;.` (Windows) or `export PYTHONPATH="${PYTHONPATH}:.` (Linux)
 - Then run `uvicorn restapi:app --reload`
 - From a web navigator go to `http://127.0.0.1:8000/docs`
 - Happy coding! 😊😊😊
