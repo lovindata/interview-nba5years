@@ -33,7 +33,7 @@ GP | TOV
 - Clone the project to your `directory`
 - From your `directory`, run `cd interview-nba5years` a first time
 - Install the requirements with `pip install -r requirements.txt`
-- From your `directory`, run `cd interview-nba5years` a second time
+- From `directory/interview-nba5years`, run `cd interview-nba5years` a second time
 - Then run `uvicorn restapi:app --reload`
 - From a web navigator go to `http://127.0.0.1:8000/docs`
 - Happy coding! 😊😊😊
@@ -43,7 +43,7 @@ GP | TOV
 
 - Docstings to do for the Python codes
 - Use `seed` when training the model for the reproductibily
-- ...? If you, reader have anything else in mind I am happy to hear it ! 🤓
+- ...? If you reader have anything else in mind, I am happy to hear it ! 🤓
 
 
 # References
