@@ -31,7 +31,7 @@ GP | TOV
 
 # Want to run or modify the application yourself ?
 
-- Install Python 3.7.1 or Use an Python virtual environnement with Python 3.7.1 (Advised)
+- Install Python 3.7.11 or Use an Python virtual environnement with Python 3.7.11 (Advised)
 - Clone the project to your `directory`
 - From your `directory`, run `cd interview-nba5years` a first time
 - Install the requirements with `pip install -r requirements.txt`
