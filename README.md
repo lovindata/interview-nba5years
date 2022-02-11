@@ -1,5 +1,7 @@
 # Technical Interview - NBA Predictor Is your favorite player going to last more than 5 years ?
 
+[![Generic badge](https://img.shields.io/badge/Python-3.7.11-blue.svg?style=plastic)](https://www.python.org/)
+
 ![](docs/stack_used.jpg)
 
 🧐💯 A simple technical inverview passed for a Data Scientist position. The subject is "given the sample data [nba_logreg.csv](/interview-nba5years/resources/nba_logreg.csv) provided by an investor specialized in NBA players, are you able to make an AI accessible through REST API capable of predicting if the investment on player is worth or not ?"
